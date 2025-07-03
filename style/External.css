@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: snow;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}  
+
+h2,h3{
+    font: sans-serif;
+    color: black;
+}
+
+/* Header, nav */
+header{
+    background-color: white;
+    padding:10px 0;
+    padding-top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0 0 4px silver;
+}
+
+header nav{
+    background-color: #1C2F57;   
+    padding: 10px 0;
+    padding-bottom: 30px;
+}
+
+header a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    padding: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+header a:hover {
+    background-color: #1a2a4b;
+    transform: scale(1.1);
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    padding-top:5px; 
+    gap: 20px;
+}
+
+/* header li{
+    justify-content: center;
+    
+} */
+
+/* .table {
+    display: flex;
+    justify-content: center ;
+    align-items: center
+}
+
+ */
+
+.judul {
+    text-align: center;
+    font-size: x-large;
+    padding-top: 160px;
+}
+
+.judul h5 {
+    padding-bottom: 40px;
+}
+
+/* Logo */
+.logo {
+    padding: 0 50px;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 5px;
+}
+
+.logo img{
+    width: auto;
+    height: 80px;
+}
+
+.logo h1{
+    position: relative;
+    top: 2vh;
+    right: 9.5vh;
+}
+.logo h1:hover {
+    color: #F7C600;
+}
+
+/* Main Content */
+.element {
+    border: 1px solid silver;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    width: fit-content;
+    position: relative;
+    left: 280px;
+}
+
+.content{
+        position: relative;
+}
+
+/* Section  */
+section{
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/* Animasi */
+.fade1{
+    opacity: 0;
+    transform: translateY(30px);
+    animation:  fadeInUp 1s ease-out forwards;
+    animation-delay: 1s;
+}
+
+.fade2{
+    opacity: 0;
+    transform: translateY(30px);
+    animation:  fadeInUp 1s ease-out forwards;
+    animation-delay: 2.5s;
+}
+
+.fade3{
+    opacity: 0;
+    transform: translateY(30px);
+    animation:  fadeInUp 1s ease-out forwards;
+    animation-delay: 4.5s;
+}
+
+.fade4{
+    opacity: 0;
+    transform: translateY(30px);
+    animation:  fadeInUp 1s ease-out forwards;
+    animation-delay: 5.8s;
+}
+
+@keyframes fadeInUp {
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in forwards;
+    opacity: 0;opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* table */
+table ul {
+    list-style-type: none;
+    color: black;
+    border-radius: 20px;
+}
+
+table img {
+    border-radius: 20px;
+}
+
+.table {
+    margin: auto; 
+    border: 2px solid;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* Form */
+.form{
+    padding-bottom: 80px;
+    border: 2px solid;
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px;
+    left: 590px;
+    bottom: 20px;
+    position: relative;
+}
+
+.form h1,p{
+    color: black;
+    padding-top: 20px;
+}
+
+/* Flexbox */
+.item {
+    background-color: #030403;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+footer{
+    box-shadow: 5vh white;
+    text-align: center;
+    border-top: 2px solid #1d3e86;
+    padding: 8px;
+    background-color: #171717;
+    color: white;
+}
+
+footer p{
+    color: white;
+    padding-bottom: 12px;
+}
+
+footer img{    
+    width: 270px;
+    height: 100px;
+    padding-right: 75vmax;
+    position: relative;
+    bottom: 9vh;
+    z-index: 0;
+}
