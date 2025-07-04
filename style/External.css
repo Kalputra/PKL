@@ -215,6 +215,15 @@ table img {
 }
 
 /* Flexbox */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    background-color: #fefefe;
+}
+
 .item {
     background-color: #030403;
     color: white;
@@ -223,6 +232,7 @@ table img {
     text-align: center;
     flex-grow: 1;
 }
+
 
 /* grid */
 .grid-container {
