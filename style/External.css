@@ -7,9 +7,19 @@ body {
     background-color: snow;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}  
+::-webkit-scrollbar-thumb {
+    background-color: #171717;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(72, 71, 71);
+    width:50px;
+    box-shadow: #171717;
+}
+
 
 h2,h3{
     font: sans-serif;
@@ -34,19 +44,17 @@ header nav{
 }
 
 header a {
-    color: rgb(255, 0, 0);
+    color: rgb(255,  0, 0);
     align-items: center;
     text-decoration: none;
     padding: 15px;
     font-size: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
 
 header a:hover {
-    background-color: #1a2a4b;
     transform: scale(1.1);
 }
 
@@ -104,6 +112,7 @@ header ul {
     color: #F7C600;
 }
 
+
 /* Main Content */
 .element {
     border: 1px solid silver;
@@ -119,6 +128,8 @@ header ul {
 .content{
         position: relative;
 }
+
+/*Carousel*/
 
 /* Section  */
 section{
@@ -241,6 +252,8 @@ table img {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
+
+
 
 footer{
     box-shadow: 5vh white;
