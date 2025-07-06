@@ -70,37 +70,53 @@
             </table>
         </section>
 
-        <section id="contact" class="form" class="fade-in">
-                <h1>FORM</h1>
-                <form action="" >
-                    <p>
-                        <label>Nama:</label>
-                        <input type="text" placeholder="nama">
-                    </p>
+<section id="contact" class="form">
+    <h1>FORM</h1>
+    <form id="userForm">
+        <p>
+            <label>Nama:</label>
+            <input type="text" id="nama" placeholder="nama anda">
+        </p>
 
-                    <p>
-                        <label>Email:</label>
-                        <input type="email" placeholder="email">
-                    </p>
+        <p>
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="example@gmail.com">
+        </p>
 
-                    <p>
-                        <label>No Telp:</label>
-                        <input type="number" placeholder="0812">
-                    </p>
+        <p>
+            <label>No Telp:</label>
+            <input type="number" id="telp" placeholder="0812xxxxxxxx">
+        </p>
 
-                    <p>
-                        <label>Jenis Kelamin:</label>
-                        <input type="radio" name="gender" id="laki">
-                        <label for="laki">Laki-Laki</label>
-                        <input type="radio" name="gender" id="perempuan">
-                        <label for="perempuan">Perempuan</label>
-                    </p>
+        <p>
+            <label>Jenis Kelamin:</label>
+            <input type="radio" name="gender" id="laki" value="Laki-Laki">
+            <label for="laki">Laki-Laki</label>
+            <input type="radio" name="gender" id="perempuan" value="Perempuan">
+            <label for="perempuan">Perempuan</label>
+        </p>
 
-                    <p>
-                        <input type="submit" value="Submit" onclick="formbutton()">
-                    </p>
-                </form>
-        </section>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+
+    <div class="table-data">
+    <h2>Data User</h2>
+    <table border="1" id="userTable">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Telp</th>
+                <th>Kelamin</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    </div>
+</section>
+
 
         <section id="flexbox" class="fade3">
             <h1> FLEXBOX</h1>

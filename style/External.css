@@ -213,31 +213,65 @@ table img {
 }
 
 /* Form */
-.form{
-    padding-bottom: 80px;
-    border: 2px solid;
-    border-radius: 20px;
-    width: 300px;
+.form {
     padding: 20px;
-    left: 79vh;
-    bottom: 20px;
-    position: relative;
+    width: 600px;
+    margin: 30px auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"] {
+    width: 100%;
+    padding: 6px;
+    margin: 5px 0 10px;
+    box-sizing: border-box;
+}
+
+form button,
+form input[type="submit"] {
+    margin-top: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
 }
 
 .form h1,p{
     color: black;
     padding-top: 20px;
+    text-align: center;
+}
+
+.table-data{
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.table-data table {
+    margin: 0 auto; 
+    border-collapse: collapse;
+    width: auto;
+    max-width: 100%;
+}
+
+.table-data th, td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 6px;
+    padding-right: 10px;
+}
+
+.table-data h1,h2{
+    text-align: center;
 }
 
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 200px;
-    background-color: #fefefe;
-}   
 
 /* Flexbox */
 .flex-container {
@@ -267,7 +301,7 @@ table img {
 }
 
 
-
+/* footer */
 footer{
     box-shadow: 5vh white;
     text-align: center;
