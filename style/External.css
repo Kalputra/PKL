@@ -111,6 +111,9 @@ header ul {
 .logo h1:hover {
     color: #F7C600;
 }
+.logo img:hover{
+    transform: scale(1.1);
+}
 
 
 /* Main Content */
@@ -287,4 +290,5 @@ footer img{
     bottom: 9vh;
     z-index: 0;
 }
+
 
