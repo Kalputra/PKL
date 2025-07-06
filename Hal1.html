@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML UI</title>
     <link rel="stylesheet" href="style/External.css">
+
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -30,7 +31,7 @@
 
 
     <main class="content">
-        <section id="Home" class="fade1">
+        <section id="home" class="fade1">
             <div class="judul">
                 <h1>Hypertext Markup Language</h1>
                 <br>
@@ -50,7 +51,7 @@
             </div>
         </section>
 
-        <section id="About" class="fade2">
+        <section id="about" class="fade2">
             <h1 style="text-align: center;">TABLE</h1>
             <table class="table">
                 <tr>
@@ -93,12 +94,12 @@
                     </p>
 
                     <p>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" onclick="formbutton()">
                     </p>
                 </form>
         </section>
 
-        <section class="fade3">
+        <section id="flexbox" class="fade3">
             <h1> FLEXBOX</h1>
             <div class="flex-container">
                 <div class="item">Item 1</div>
@@ -109,7 +110,7 @@
 
         </section>
 
-        <section class="fade4">
+        <section id="grid" class="fade4">
             <h1> GRID LAYOUT</h1>
             
             <div class="grid-container">
@@ -117,10 +118,12 @@
                 <div class="item">Item 2</div>
                 <div class="item">Item 3</div>
                 <div class="item">Item 4</div>
-        <div class="item">Item 5</div>
-        <div class="item">Item 6</div>
-    </div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+            </div>
         </section>
+
+
 
 
     </main>
@@ -133,6 +136,8 @@
             </p>
             <img src="asset/Fasilkom footer.png" alt="Logo UI">
         </footer>
+
+            <script src="script/script.js"></script>
 </body>
 
 </html>

@@ -7,9 +7,18 @@ body {
     background-color: snow;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}  
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1d3e86;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1C2F57;
+    width: 50px;
+}
 
 h2,h3{
     font: sans-serif;
@@ -34,20 +43,19 @@ header nav{
 }
 
 header a {
-    color: rgb(255, 0, 0);
+    color: white;
     align-items: center;
     text-decoration: none;
     padding: 15px;
     font-size: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    transition: 0.3 ease;
+    border-bottom: 3px solid transparent;
 }
 
-header a:hover {
-    background-color: #1a2a4b;
-    transform: scale(1.1);
+nav a:hover,
+nav a.active {
+    color: rgb(255, 0, 0);
+    border-bottom: 3px solid rgb(255, 0, 0);
 }
 
 header ul {
@@ -214,6 +222,16 @@ table img {
     color: black;
     padding-top: 20px;
 }
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    background-color: #fefefe;
+}   
 
 /* Flexbox */
 .item {
