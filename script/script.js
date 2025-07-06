@@ -1,9 +1,32 @@
 //formbutton
-function formbutton() {
+const form = document.getElementById('contact');
 
-    alert("Okee data nya masuk");
-}
+form.addEventListener("submit", function(e){
+    e.preventDefault();
 
+    const nama = document.getElementById('nama').value;
+    const email = document.getElementById('email').value;
+    const telp = document.getElementById('telp').value;
+    const gender = document.querySelector('input[name="gender"]:checked')?.value;
+
+    if (!nama || !email || !telp || !gender) {
+        alert("Harap Isi Semua Data!");
+        return;
+    }
+
+    const dataUser = {
+        nama: nama,
+        email: email,
+        telp: telp,
+        gender: gender
+    };
+
+    localStorage.setItem(dataUser,JSON.stringify(dataUser));
+
+    alert("Data Berhasil disimpan di localStorage!");
+    form.reset();
+
+}); 
 
 //active link
 let sections = document.querySelectorAll('section');
@@ -26,5 +49,19 @@ window.onscroll = () => {
         }
     });
 };
+
+// Smooth Scrolling
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
 
 
