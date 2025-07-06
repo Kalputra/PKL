@@ -277,18 +277,19 @@ footer{
     color: white;
 }
 
-footer p{
+footer p, address{
     color: white;
     padding-bottom: 12px;
+    text-align: center;
 }
 
-footer img{    
-    width: 270px;
-    height: 100px;
+footer a{    
+    width: auto;
+    height: auto;
     padding-right: 75vmax;
-    position: relative;
     bottom: 9vh;
     z-index: 0;
+    position: relative;
 }
 
 
