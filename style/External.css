@@ -304,8 +304,8 @@ table img {
     line-height: 30px;
 }
 .single-box:hover{
-    background-color: darkorange;
-    color: #fff;
+    background-color: whitesmoke;
+    color: #000000;
 }
 .single-box:hover .line{
     background-color: #fff;
