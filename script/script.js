@@ -6,13 +6,6 @@
             }
         }
 
-//formbutton
-function formbutton() {
-
-    alert("Okee data nya masuk");
-}
-
-console.log("coba coba");
 
 //active link
 let sections = document.querySelectorAll('section');

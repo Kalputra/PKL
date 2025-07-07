@@ -112,11 +112,22 @@ header ul {
 .logo h1:hover {
     color: #F7C600;
 }
-
-.logo img:hover {
-    transform: scale(1.1);
+.logo img:hover{
+    transform: scale(1.03);
 }
 
+.logo h1 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 30px;
+  padding: 20px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: #000000;
+  letter-spacing: 0.1em;
+  text-shadow: 0 5px 0px #999999, 0 10px 20px rgba(0, 0, 0, 0.9);
+  transition: color 0.3s ease;
+}
 
 /* Main Content */
 .element {
@@ -142,6 +153,7 @@ section {
     text-align: center;
     padding-bottom: 40px;
 }
+
 
 /* Animasi */
 .fade1 {
