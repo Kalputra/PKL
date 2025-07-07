@@ -20,15 +20,15 @@ body {
     width: 50px;
 }
 
-h2,h3{
+h2, h3 {
     font: sans-serif;
     color: black;
 }
 
 /* Header, nav */
-header{
+header {
     background-color: white;
-    padding:10px 0;
+    padding: 10px 0;
     padding-top: 0;
     position: fixed;
     width: 100%;
@@ -36,8 +36,8 @@ header{
     box-shadow: 0 0 4px silver;
 }
 
-header nav{
-    background-color: #1C2F57;   
+header nav {
+    background-color: #1C2F57;
     padding: 10px 0;
     padding-bottom: 30px;
 }
@@ -63,7 +63,7 @@ header ul {
     list-style-type: none;
     text-align: center;
     justify-content: center;
-    padding-top:5px; 
+    padding-top: 5px;
     gap: 20px;
 }
 
@@ -98,20 +98,22 @@ header ul {
     padding-top: 5px;
 }
 
-.logo img{
+.logo img {
     width: auto;
     height: 80px;
 }
 
-.logo h1{
+.logo h1 {
     position: relative;
     top: 2vh;
     right: 9.5vh;
 }
+
 .logo h1:hover {
     color: #F7C600;
 }
-.logo img:hover{
+
+.logo img:hover {
     transform: scale(1.1);
 }
 
@@ -128,58 +130,59 @@ header ul {
     left: 33vh;
 }
 
-.content{
-        position: relative;
+.content {
+    position: relative;
 }
 
 /*Carousel*/
 
 /* Section  */
-section{
+section {
     padding-top: 50px;
     text-align: center;
     padding-bottom: 40px;
 }
 
 /* Animasi */
-.fade1{
+.fade1 {
     opacity: 0;
     transform: translateY(30px);
-    animation:  fadeInUp 1s ease-out forwards;
+    animation: fadeInUp 1s ease-out forwards;
     animation-delay: 1s;
 }
 
-.fade2{
+.fade2 {
     opacity: 0;
     transform: translateY(30px);
-    animation:  fadeInUp 1s ease-out forwards;
+    animation: fadeInUp 1s ease-out forwards;
     animation-delay: 2.5s;
 }
 
-.fade3{
+.fade3 {
     opacity: 0;
     transform: translateY(30px);
-    animation:  fadeInUp 1s ease-out forwards;
+    animation: fadeInUp 1s ease-out forwards;
     animation-delay: 4.5s;
 }
 
-.fade4{
+.fade4 {
     opacity: 0;
     transform: translateY(30px);
-    animation:  fadeInUp 1s ease-out forwards;
+    animation: fadeInUp 1s ease-out forwards;
     animation-delay: 5.8s;
 }
 
 @keyframes fadeInUp {
     to {
-    opacity: 1;
-    transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
 .fade-in {
     animation: fadeIn 2s ease-in forwards;
-    opacity: 0;opacity: 0;
+    opacity: 0;
+    opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 1s ease-out forwards;
     animation-delay: 0.2s;
@@ -189,7 +192,8 @@ section{
     from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
@@ -201,13 +205,19 @@ table ul {
     border-radius: 20px;
 }
 
+table a{
+    text-decoration: none;
+    color: black;
+}
+
 table img {
     border-radius: 20px;
 }
 
 .table {
-    margin: auto; 
-    border: 2px solid;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid silver;
     text-align: center;
     border-radius: 20px;
 }
@@ -240,13 +250,13 @@ form input[type="submit"] {
     cursor: pointer;
 }
 
-.form h1,p{
+.form h1, p {
     color: black;
     padding-top: 20px;
     text-align: center;
 }
 
-.table-data{
+.table-data {
     width: 100%;
     margin-top: 20px;
     padding-top: 20px;
@@ -254,20 +264,20 @@ form input[type="submit"] {
 }
 
 .table-data table {
-    margin: 0 auto; 
+    margin: 0 auto;
     border-collapse: collapse;
     width: auto;
     max-width: 100%;
 }
 
-.table-data th, td{
+.table-data th, td {
     border: 1px solid black;
     text-align: center;
     padding: 6px;
     padding-right: 10px;
 }
 
-.table-data h1,h2{
+.table-data h1, h2 {
     text-align: center;
 }
 
@@ -286,7 +296,7 @@ form input[type="submit"] {
 .item {
     background-color: #030403;
     color: white;
-    padding: 20px;
+    padding: 20px;  
     margin: 10px;
     text-align: center;
     flex-grow: 1;
@@ -302,7 +312,7 @@ form input[type="submit"] {
 
 
 /* footer */
-footer{
+footer {
     box-shadow: 5vh white;
     text-align: center;
     border-top: 2px solid #1d3e86;
@@ -311,13 +321,13 @@ footer{
     color: white;
 }
 
-footer p, address{
+footer p, address {
     color: white;
     padding-bottom: 12px;
     text-align: center;
 }
 
-footer a{    
+footer a {
     width: auto;
     height: auto;
     padding-right: 75vmax;
@@ -325,5 +335,3 @@ footer a{
     z-index: 0;
     position: relative;
 }
-
-
