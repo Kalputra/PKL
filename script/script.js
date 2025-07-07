@@ -20,6 +20,8 @@ window.onscroll = () => {
     });
 };
 
+//oke oke
+
 // Smooth Scrolling
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
