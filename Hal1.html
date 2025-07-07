@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <nav class="navbar">
+        <nav>
             <ul>
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -27,10 +27,10 @@
                 <img src="asset/65logo.png" alt="Logo SMK 65">
             </a>
         </div>
-        
+
     </header>
 
-    <hr/>
+    <hr />
 
 
     <main class="content">
@@ -39,7 +39,8 @@
                 <h1>Hypertext Markup Language</h1>
                 <br>
                 <h5>
-                    <abbr title="Hypertext Markup Language">HTML</abbr> adalah bahasa markup standar untuk membuat website
+                    <abbr title="Hypertext Markup Language">HTML</abbr> adalah bahasa markup standar untuk membuat
+                    website
                 </h5>
             </div>
 
@@ -54,67 +55,95 @@
             </div>
         </section>
 
-                <section id="about" class="fade2">
+        <section id="about" class="">
             <h1 style="text-align: center;">TABLE</h1>
             <table class="table">
                 <tr>
                     <td>
                         <img src="asset/Kelompok PKL.jpg" alt="Foto Kelompok" width="450px">
-                        <ul>
-                            <li>Haikal</li>
-                            <li>Khadafi</li>
-                            <li>Khurin</li>
-                        </ul>
                     </td>
                 </tr>
             </table>
+            <h1>ANGGOTA</h1>
+            <div class="box-area">
+                <div class="single-box">
+                    <div class="img-area"></div>
+                    <div class="img-text">
+                        <span class="header-text"><strong>Haikal</strong></span>
+                        <div class="line"></div>
+                        <h3>GameDev & FullStack Dev</h3>
+                        <p>Biasa dipanggil kal, saya seorang pelajar yang addicted ke dunia gamedev dan saya juga suka menjadi fullstack developer, pernah memimpin beberapa projek website, launch aplikasi di expo dan mengembangkan game di unity maupun unreal engine.</p>
+                    </div>
+                </div>
+                <div class="single-box">
+                    <div class="img-area"></div>
+                    <div class="img-text">
+                        <span class="header-text"><strong>Khadafi</strong></span>
+                        <div class="line"></div>
+                        <h3>GameDev & FrontEnd Dev</h3>
+                        <p>Saya biasa dipanggil dafi, dan Saya adalah seorang siswa SMK jurusan Pengembangan Perangkat Lunak  & Gim yang memiliki minat besar dalam dunia tekonolgi, khususnya di bidang Pengembangan gim, dan FrontEnd Developer.</p>
+                    </div>
+                </div>
+                <div class="single-box">
+                    <div class="img-area"></div>
+                    <div class="img-text">
+                        <span class="header-text"><strong>Khurin</strong></span>
+                        <div class="line"></div>
+                        <h3>UI/UX Design</h3>
+                        <p>Saya biasa dipanggil Khurin, dan saya adalah seorang siswa SMK jurusan Pengembangan Perangkat Lunak & Gim. Saya memiliki minat besar dalam dunia teknologi, khususnya di bidang desain visual luar seperti desain grafis dan branding.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-<section id="contact" class="form">
-    <h1>FORM</h1>
-    <form id="userForm">
-        <p>
-            <label>Nama:</label>
-            <input type="text" id="nama" placeholder="nama anda">
-        </p>
+        <section>
+            
+        </section>
+        <section id="contact" class="form">
+            <h1>FORM</h1>
+            <form id="userForm">
+                <p>
+                    <label>Nama:</label>
+                    <input type="text" id="nama" placeholder="nama anda">
+                </p>
 
-        <p>
-            <label>Email:</label>
-            <input type="email" id="email" placeholder="example@gmail.com">
-        </p>
+                <p>
+                    <label>Email:</label>
+                    <input type="email" id="email" placeholder="example@gmail.com">
+                </p>
 
-        <p>
-            <label>No Telp:</label>
-            <input type="number" id="telp" placeholder="0812xxxxxxxx">
-        </p>
+                <p>
+                    <label>No Telp:</label>
+                    <input type="number" id="telp" placeholder="0812xxxxxxxx">
+                </p>
 
-        <p>
-            <label>Jenis Kelamin:</label>
-            <input type="radio" name="gender" id="laki" value="Laki-Laki">
-            <label for="laki">Laki-Laki</label>
-            <input type="radio" name="gender" id="perempuan" value="Perempuan">
-            <label for="perempuan">Perempuan</label>
-        </p>
+                <p>
+                    <label>Jenis Kelamin:</label>
+                    <input type="radio" name="gender" id="laki" value="Laki-Laki">
+                    <label for="laki">Laki-Laki</label>
+                    <input type="radio" name="gender" id="perempuan" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </p>
 
-        <p>
-            <input type="submit" value="Submit">
-        </p>
-    </form>
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
 
-    <div class="table-data">
-    <h2>Data User</h2>
-    <table border="1" id="userTable">
-        <thead>
-            <tr>
-                <th>Nama</th>
-                <th>Email</th>
-                <th>Telp</th>
-                <th>Kelamin</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-    </div>
-</section>
+            <div class="table-data">
+                <h2>Data User</h2>
+                <table border="1" id="userTable">
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Email</th>
+                            <th>Telp</th>
+                            <th>Kelamin</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
 
 
         <section id="flexbox" class="fade3">
@@ -124,13 +153,13 @@
                 <div class="item">Item 2</div>
                 <div class="item">Item 3</div>
                 <div class="item">Item 4</div>
-            </div>  
+            </div>
 
         </section>
 
         <section id="grid" class="fade4">
             <h1> GRID LAYOUT</h1>
-            
+
             <div class="grid-container">
                 <div class="item">Item 1</div>
                 <div class="item">Item 2</div>
@@ -141,7 +170,7 @@
             </div>
         </section>
 
-        <section >
+        <section>
 
         </section>
 
@@ -149,17 +178,17 @@
 
     </main>
 
-        <footer>
-            <p>&copy; 2025 PKL UI FASILKOM</p>
-                <address>
-                    Jl. Prof. DR. Sudjono D. Pusponegoro, Pondok Cina, Kecamatan Beji, Kota Depok, Jawa Barat 16425
-                </address>
-            <a href="https://cs.ui.ac.id/ ">
-                <img src="asset/Fasilkom footer.png" alt="Logo UI">
-            </a>
-        </footer>
+    <footer>
+        <p>&copy; 2025 PKL UI FASILKOM</p>
+        <address>
+            Jl. Prof. DR. Sudjono D. Pusponegoro, Pondok Cina, Kecamatan Beji, Kota Depok, Jawa Barat 16425
+        </address>
+        <a href="https://cs.ui.ac.id/ ">
+            <img src="asset/Fasilkom footer.png" alt="Logo UI">
+        </a>
+    </footer>
 
-            <script src="script/script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>

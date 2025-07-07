@@ -45,7 +45,7 @@ navLinks.forEach(link => {
     });
 });
 
- //dapi anak baik
+ //testing
 
 //form
 let users = JSON.parse(localStorage.getItem('users')) || [];
@@ -59,7 +59,7 @@ document.getElementById('userForm').addEventListener('submit', function (e) {
     const telp = document.getElementById('telp').value;
     const gender = document.querySelector('input[name="gender"]:checked')?.value || '';
 
-    if (!nama || !email || !telp || !gender) {
+    if (!nama || !email || !telp || !gender) {  
         alert('Isi terlebih dahulu !');
         return;
     }
