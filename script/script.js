@@ -59,7 +59,7 @@ document.getElementById('userForm').addEventListener('submit', function (e) {
     const telp = document.getElementById('telp').value;
     const gender = document.querySelector('input[name="gender"]:checked')?.value || '';
 
-    if (!nama || !email || !telp || !gender) {
+    if (!nama || !email || !telp || !gender) {  
         alert('Isi terlebih dahulu !');
         return;
     }
