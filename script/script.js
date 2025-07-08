@@ -21,7 +21,7 @@ window.onscroll = () => {
         if (top >= offset && top < offset + height) {
             navLinks.forEach(link => {
                 link.classList.remove('active');
-            });
+            }); 
 
             const activeLink = document.querySelector('header nav a[href="#' + id + '"]');
             if (activeLink) activeLink.classList.add('active');
@@ -53,7 +53,7 @@ let editingIndex = null;
 
 document.getElementById('userForm').addEventListener('submit', function (e) {
     e.preventDefault();
-
+    
     const nama = document.getElementById('nama').value;
     const email = document.getElementById('email').value;
     const telp = document.getElementById('telp').value;

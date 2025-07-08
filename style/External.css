@@ -306,7 +306,7 @@ table img {
 .single-box:hover{
     background-color: whitesmoke;
     color: #000000;
-}
+}  
 .single-box:hover .line{
     background-color: #fff;
 }
