@@ -45,7 +45,7 @@ navLinks.forEach(link => {
     });
 });
 
- //testing
+ //dapi anak baik
 
 //form
 let users = JSON.parse(localStorage.getItem('users')) || [];
@@ -53,13 +53,13 @@ let editingIndex = null;
 
 document.getElementById('userForm').addEventListener('submit', function (e) {
     e.preventDefault();
-    
+
     const nama = document.getElementById('nama').value;
     const email = document.getElementById('email').value;
     const telp = document.getElementById('telp').value;
     const gender = document.querySelector('input[name="gender"]:checked')?.value || '';
 
-    if (!nama || !email || !telp || !gender) {  
+    if (!nama || !email || !telp || !gender) {
         alert('Isi terlebih dahulu !');
         return;
     }
