@@ -135,8 +135,6 @@ header ul {
 
 /* Main Content */
 .element {
-  border: 1px solid silver;
-  border-radius: 20px;
   padding: 20px;
   background-color: white;
   margin-bottom: 20px;
